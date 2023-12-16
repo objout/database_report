@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}\PYG{+w}{ }\PYG{n}{cust\PYGZus{}name}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{cust\PYGZus{}contact}\PYG{+w}{ }\PYG{k}{FROM}\PYG{+w}{ }\PYG{n}{customers}
+\PYG{k}{WHERE}\PYG{+w}{ }\PYG{n}{cust\PYGZus{}id}\PYG{+w}{ }\PYG{k}{IN}\PYG{+w}{ }\PYG{p}{(}\PYG{k}{SELECT}\PYG{+w}{ }\PYG{n}{cust\PYGZus{}id}\PYG{+w}{ }\PYG{k}{FROM}\PYG{+w}{ }\PYG{n}{orders}
+\PYG{+w}{  }\PYG{k}{WHERE}\PYG{+w}{ }\PYG{n}{order\PYGZus{}num}\PYG{+w}{ }\PYG{k}{IN}\PYG{+w}{ }\PYG{p}{(}\PYG{k}{SELECT}\PYG{+w}{ }\PYG{n}{order\PYGZus{}num}\PYG{+w}{ }\PYG{k}{FROM}\PYG{+w}{ }\PYG{n}{orderitems}
+\PYG{+w}{    }\PYG{k}{WHERE}\PYG{+w}{ }\PYG{n}{prod\PYGZus{}id}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}TNT2\PYGZsq{}}\PYG{p}{));}
+\end{Verbatim}

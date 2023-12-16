@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{ALTER}\PYG{+w}{ }\PYG{k}{TABLE}\PYG{+w}{ }\PYG{n}{orderitems}\PYG{+w}{ }\PYG{k}{ADD}\PYG{+w}{ }\PYG{k}{CONSTRAINT}\PYG{+w}{ }\PYG{n}{fk\PYGZus{}orderitems\PYGZus{}orders}
+\PYG{+w}{  }\PYG{k}{FOREIGN}\PYG{+w}{ }\PYG{k}{KEY}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{order\PYGZus{}num}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{REFERENCES}\PYG{+w}{ }\PYG{n}{orders}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{order\PYGZus{}num}\PYG{p}{);}
+\PYG{k}{ALTER}\PYG{+w}{ }\PYG{k}{TABLE}\PYG{+w}{ }\PYG{n}{orderitems}\PYG{+w}{ }\PYG{k}{ADD}\PYG{+w}{ }\PYG{k}{CONSTRAINT}\PYG{+w}{ }\PYG{n}{fk\PYGZus{}orderitems\PYGZus{}products}
+\PYG{+w}{  }\PYG{k}{FOREIGN}\PYG{+w}{ }\PYG{k}{KEY}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{prod\PYGZus{}id}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{REFERENCES}\PYG{+w}{ }\PYG{n}{products}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{prod\PYGZus{}id}\PYG{p}{);}
+\PYG{k}{ALTER}\PYG{+w}{ }\PYG{k}{TABLE}\PYG{+w}{ }\PYG{n}{orders}\PYG{+w}{ }\PYG{k}{ADD}\PYG{+w}{ }\PYG{k}{CONSTRAINT}\PYG{+w}{ }\PYG{n}{fk\PYGZus{}orders\PYGZus{}customers}
+\PYG{+w}{  }\PYG{k}{FOREIGN}\PYG{+w}{ }\PYG{k}{KEY}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{cust\PYGZus{}id}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{REFERENCES}\PYG{+w}{ }\PYG{n}{customers}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{cust\PYGZus{}id}\PYG{p}{);}
+\PYG{k}{ALTER}\PYG{+w}{ }\PYG{k}{TABLE}\PYG{+w}{ }\PYG{n}{products}\PYG{+w}{ }\PYG{k}{ADD}\PYG{+w}{ }\PYG{k}{CONSTRAINT}\PYG{+w}{ }\PYG{n}{fk\PYGZus{}products\PYGZus{}vendors}
+\PYG{+w}{  }\PYG{k}{FOREIGN}\PYG{+w}{ }\PYG{k}{KEY}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{vend\PYGZus{}id}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{REFERENCES}\PYG{+w}{ }\PYG{n}{vendors}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{vend\PYGZus{}id}\PYG{p}{);}
+\end{Verbatim}

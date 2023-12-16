@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+mkdir\PYG{+w}{ }\PYGZhy{}p\PYG{+w}{ }/home/test/physical/backup
+gs\PYGZus{}basebackup\PYG{+w}{ }\PYGZhy{}D\PYG{+w}{ }/home/test/physical/backup\PYG{+w}{ }\PYGZhy{}p\PYG{+w}{ }\PYG{l+m}{26000}
+\end{Verbatim}

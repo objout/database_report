@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}\PYG{+w}{ }\PYG{k}{COUNT}\PYG{p}{(}\PYG{o}{*}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{AS}\PYG{+w}{ }\PYG{n}{num\PYGZus{}cust}\PYG{+w}{ }\PYG{k}{FROM}\PYG{+w}{ }\PYG{n}{customers}\PYG{p}{;}
+\end{Verbatim}

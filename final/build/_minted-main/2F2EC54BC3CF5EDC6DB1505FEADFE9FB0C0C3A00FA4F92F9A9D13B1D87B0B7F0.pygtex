@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}\PYG{+w}{ }\PYG{n}{vend\PYGZus{}name}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{prod\PYGZus{}name}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{prod\PYGZus{}price}
+\PYG{k}{FROM}\PYG{+w}{ }\PYG{n}{vendors}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{products}
+\PYG{k}{WHERE}\PYG{+w}{ }\PYG{n}{vendors}\PYG{p}{.}\PYG{n}{vend\PYGZus{}id}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{products}\PYG{p}{.}\PYG{n}{vend\PYGZus{}id}
+\PYG{k}{ORDER}\PYG{+w}{ }\PYG{k}{BY}\PYG{+w}{ }\PYG{n}{vend\PYGZus{}name}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{prod\PYGZus{}name}\PYG{p}{;}
+\end{Verbatim}

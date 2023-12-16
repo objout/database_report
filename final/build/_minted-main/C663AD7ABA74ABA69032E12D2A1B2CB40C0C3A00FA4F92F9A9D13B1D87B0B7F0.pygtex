@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZhy{}\PYGZhy{} 账户添加}
+\PYG{k}{CREATE}\PYG{+w}{ }\PYG{k}{USER}\PYG{+w}{ }\PYG{n}{JIM}\PYG{+w}{ }\PYG{n}{PASSWORD}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}Bigdata@123\PYGZsq{}}\PYG{p}{;}
+
+\PYG{c+c1}{\PYGZhy{}\PYGZhy{} 账户查看}
+\PYG{k}{SELECT}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{k}{FROM}\PYG{+w}{ }\PYG{n}{pg\PYGZus{}user}\PYG{p}{;}
+
+\PYG{c+c1}{\PYGZhy{}\PYGZhy{} 账户删除}
+\PYG{k}{DROP}\PYG{+w}{ }\PYG{k}{USER}\PYG{+w}{ }\PYG{n}{jim}\PYG{+w}{ }\PYG{k}{CASCADE}\PYG{p}{;}
+\end{Verbatim}

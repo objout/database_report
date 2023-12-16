@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{CREATE}\PYG{+w}{ }\PYG{k}{TABLE}\PYG{+w}{ }\PYG{n}{t\PYGZus{}test}\PYG{p}{(}\PYG{n}{c1}\PYG{+w}{ }\PYG{n+nb}{INT}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{c2}\PYG{+w}{ }\PYG{n+nb}{INT}\PYG{p}{);}
+
+\PYG{c+c1}{\PYGZhy{}\PYGZhy{} 创建存储过程}
+\PYG{k}{CREATE}\PYG{+w}{ }\PYG{k}{OR}\PYG{+w}{ }\PYG{k}{REPLACE}\PYG{+w}{ }\PYG{k}{procedure}\PYG{+w}{ }\PYG{n}{insert\PYGZus{}data}
+\PYG{k}{IS}
+\PYG{n}{a}\PYG{+w}{ }\PYG{n+nb}{INT}\PYG{p}{;}
+\PYG{n}{b}\PYG{+w}{ }\PYG{n+nb}{INT}\PYG{p}{;}
+\PYG{k}{BEGIN}
+\PYG{n}{a}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{n}{b}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{;}
+\PYG{k}{INSERT}\PYG{+w}{ }\PYG{k}{INTO}\PYG{+w}{ }\PYG{n}{t\PYGZus{}test}\PYG{+w}{ }\PYG{k}{VALUES}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,}\PYG{n}{b}\PYG{p}{);}
+\PYG{k}{INSERT}\PYG{+w}{ }\PYG{k}{INTO}\PYG{+w}{ }\PYG{n}{t\PYGZus{}test}\PYG{+w}{ }\PYG{k}{VALUES}\PYG{p}{(}\PYG{n}{b}\PYG{p}{,}\PYG{n}{a}\PYG{p}{);}
+\PYG{k}{END}\PYG{p}{;}
+\PYG{o}{/}
+
+\PYG{c+c1}{\PYGZhy{}\PYGZhy{} 执行存储过程}
+\PYG{k}{CALL}\PYG{+w}{ }\PYG{n}{insert\PYGZus{}data}\PYG{p}{();}
+\PYG{k}{SELECT}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{k}{FROM}\PYG{+w}{ }\PYG{n}{t\PYGZus{}test}\PYG{p}{;}
+\end{Verbatim}

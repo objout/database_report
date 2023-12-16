@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZhy{}\PYGZhy{} 应用需求如4.1节所述}
+\PYG{k}{create}\PYG{+w}{ }\PYG{k}{database}\PYG{+w}{ }\PYG{n}{commerce}\PYG{p}{;}
+\end{Verbatim}

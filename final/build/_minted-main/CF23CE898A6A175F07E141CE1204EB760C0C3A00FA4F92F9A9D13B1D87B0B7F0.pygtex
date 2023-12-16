@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{CREATE}\PYG{+w}{ }\PYG{k}{INDEX}\PYG{+w}{ }\PYG{n}{product\PYGZus{}index}\PYG{+w}{ }\PYG{k}{ON}\PYG{+w}{ }\PYG{n}{products}\PYG{p}{(}\PYG{n}{prod\PYGZus{}name}\PYG{p}{);}
+\PYG{k}{DROP}\PYG{+w}{ }\PYG{k}{INDEX}\PYG{+w}{ }\PYG{n}{product\PYGZus{}index}\PYG{p}{;}
+\end{Verbatim}
