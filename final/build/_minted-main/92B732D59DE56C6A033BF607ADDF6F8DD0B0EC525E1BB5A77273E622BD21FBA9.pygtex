@@ -1,7 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-gs\PYGZus{}om\PYG{+w}{ }\PYGZhy{}t\PYG{+w}{ }stop
-\PYG{n+nb}{cd}\PYG{+w}{ }/gaussdb/data/db1
-rm\PYG{+w}{ }\PYGZhy{}rf\PYG{+w}{ }*
-cp\PYG{+w}{ }\PYGZhy{}r\PYG{+w}{ }/home/test/physical/backup/.\PYG{+w}{ }/gaussdb/data/db1
-gs\PYGZus{}om\PYG{+w}{ }\PYGZhy{}t\PYG{+w}{ }start
-\end{Verbatim}

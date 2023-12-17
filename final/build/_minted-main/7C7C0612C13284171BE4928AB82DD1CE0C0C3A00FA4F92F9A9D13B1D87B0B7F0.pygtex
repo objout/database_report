@@ -1,9 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{k}{CREATE}\PYG{+w}{ }\PYG{k}{USER}\PYG{+w}{ }\PYG{n}{joe}\PYG{+w}{ }\PYG{n}{PASSWORD}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}Bigdata@123\PYGZsq{}}\PYG{p}{;}
-
-\PYG{c+c1}{\PYGZhy{}\PYGZhy{} 授予权限}
-\PYG{+w}{ }\PYG{k}{GRANT}\PYG{+w}{ }\PYG{k}{ALL}\PYG{+w}{ }\PYG{k}{PRIVILEGES}\PYG{+w}{ }\PYG{k}{TO}\PYG{+w}{ }\PYG{n}{joe}\PYG{p}{;}
-
-\PYG{c+c1}{\PYGZhy{}\PYGZhy{} 收回权限}
-\PYG{k}{REVOKE}\PYG{+w}{ }\PYG{k}{ALL}\PYG{+w}{ }\PYG{k}{PRIVILEGES}\PYG{+w}{ }\PYG{k}{FROM}\PYG{+w}{ }\PYG{n}{joe}\PYG{p}{;}
-\end{Verbatim}
